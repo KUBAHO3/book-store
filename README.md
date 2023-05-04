@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
   <img src="./public/icon_head.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Math magicians</b></h3>
+  <h3><b>Book-Store</b></h3>
 
 </div>
 
@@ -61,11 +61,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math magicians <a name="about-project"></a>
+# 📖 Book-Store <a name="about-project"></a>
 
 This is a React App that provided by Microverse for the purpose of learning and mastering React
 
-**Math magicians** is a React-based project
+**Book-Store** is a React-based project
 
 ## :hammer_and_wrench: Built With <a name="built-with"></a>
 - HTML
@@ -116,7 +116,7 @@ This is a React App that provided by Microverse for the purpose of learning and 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [live demo](https://mathmagicianapp-tx9k.onrender.com/)
+-  Comming Soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +166,7 @@ Install this project with:
 npm
 Example command:
 ```sh
-  cd math-magician
+  cd book-store
   npm init -y
 ```
 ### Usage
@@ -185,12 +185,13 @@ Example command:
   npx eslint .
 ```
 ### Deployment
-You can deploy this project using:
+<!-- You can deploy this project using:
 GitHub Pages
 Example:
 ```sh
 git@github.com:KUBAHO3/Sharing-World.git
-```
+``` -->
+Not yet deployed ...
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :busts_in_silhouette: Authors <a name="authors"></a>
@@ -238,7 +239,7 @@ If you like this project please follow me on github & twitter and also connect o
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/KUBAHO3/math-magicians/blob/events/MIT.md) licensed.
+This project is [MIT](https://github.com/KUBAHO3/book-store/blob/events/MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
