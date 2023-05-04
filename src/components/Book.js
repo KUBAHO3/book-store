@@ -3,6 +3,7 @@ import {
   CircularProgressbar,
 } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import '../styles/book.css';
 
 function Book() {
   const percentage = 66;
