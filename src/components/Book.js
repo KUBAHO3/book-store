@@ -7,7 +7,7 @@ import '../styles/book.css';
 import PropTypes from 'prop-types';
 
 function Book({
-  category, title, author,
+  category, title, author, id, onClick,
 }) {
   return (
     <div className="book-wrapper">
@@ -17,7 +17,7 @@ function Book({
         <p className="book-author">{author}</p>
         <ul className="book-actions">
           <li className="book-comment">Comments</li>
-          <li className="book-remove"><button type="button"> Remove </button></li>
+          <li className="book-remove"><button type="button" id={id} onClick={(e) => onClick(e)}> Remove </button></li>
           <li className="book-edit">Edit</li>
         </ul>
       </div>
@@ -46,12 +46,15 @@ Book.defaultProps = {
   category: '',
   title: '',
   author: '',
-
+  id: '',
+  onClick: '',
 };
 Book.propTypes = {
   category: PropTypes.string,
   title: PropTypes.string,
   author: PropTypes.string,
+  id: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default Book;
