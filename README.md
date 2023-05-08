@@ -72,6 +72,7 @@ This is a React App that provided by Microverse for the purpose of learning and 
 - CSS
 - JavaScript
 - React
+- Redux-toolkit
 ### Tech Stack <a name="tech-stack"></a>
 <details>
   <summary>Version Control</summary>
@@ -108,6 +109,8 @@ This is a React App that provided by Microverse for the purpose of learning and 
 - **Add calc operations**
 - **Add dynamic Quote**
 - **Use Hooks**
+- **Use react redux**
+- **Use redux toolkit**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
