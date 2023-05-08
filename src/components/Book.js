@@ -5,6 +5,7 @@ import {
 import 'react-circular-progressbar/dist/styles.css';
 import '../styles/book.css';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 function Book({
   category, title, author, id, onClick,
@@ -17,7 +18,9 @@ function Book({
         <p className="book-author">{author || 'Unknown'}</p>
         <ul className="book-actions">
           <li className="book-comment">Comments</li>
-          <li className="book-remove"><button type="button" id={id} onClick={(e) => onClick(e)}> Remove </button></li>
+          <li className="book-remove">
+            <Button cname="remove-button" id={id} onClick={onClick} title="Remove" />
+          </li>
           <li className="book-edit">Edit</li>
         </ul>
       </div>
