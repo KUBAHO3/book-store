@@ -12,9 +12,9 @@ function Book({
   return (
     <div className="book-wrapper">
       <div className="book-info">
-        <p className="book-genre">{category}</p>
-        <p className="book-title">{title}</p>
-        <p className="book-author">{author}</p>
+        <p className="book-genre">{category || 'Uncategorised'}</p>
+        <p className="book-title">{title || 'Unititled'}</p>
+        <p className="book-author">{author || 'Unknown'}</p>
         <ul className="book-actions">
           <li className="book-comment">Comments</li>
           <li className="book-remove"><button type="button" id={id} onClick={(e) => onClick(e)}> Remove </button></li>
