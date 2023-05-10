@@ -13,12 +13,13 @@ function BookList() {
   useEffect(() => {
     dispatch(fetchBooks());
   }, []);
-  const transformedData = Object.entries(booksArr).map(([id, items]) => {
-    const [item] = items; // assume there is only one item in each array
-    return { id, ...item };
+  const transformedData = Object.entries(booksArr).map(([item_id, items]) => {
+    const [item] = items;
+    return { item_id, ...item };
   });
   const clickHandler = (e) => {
     dispatch(removeBook(e.target.id));
+    window.location.reload();
   };
 
   if (booksStatus === 'loading') {
@@ -37,8 +38,8 @@ function BookList() {
     <>
       {transformedData.map((book) => (
         <Book
-          key={book.itemId + book.title}
-          id={book.itemId}
+          key={book.item_id + book.title}
+          id={book.item_id}
           category={book.category}
           title={book.title}
           author={book.author}
