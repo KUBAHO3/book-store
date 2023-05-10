@@ -20,7 +20,6 @@ function BookList() {
   });
   const clickHandler = (e) => {
     dispatch(removeBook(e.target.id));
-    window.location.reload();
   };
 
   if (booksStatus === 'loading') {

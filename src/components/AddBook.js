@@ -7,15 +7,7 @@ import Button from './Button';
 function AddBook() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  // const booksArr = useSelector((state) => state.book.books);
   const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(fetchBooks());
-  // }, []);
-  // const transformedData = Object.entries(booksArr).map(([id, items]) => {
-  //   const [item] = items; // assume there is only one item in each array
-  //   return { id, ...item };
-  // });
 
   const clickHandler = () => {
     const id = Math.floor(Math.random() * 1000000);

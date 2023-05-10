@@ -51,10 +51,10 @@ export const BookSlice = createSlice({
         state.error = action.error.message;
       })
       .addCase(addBook.fulfilled, (state, action) => {
-        state.books.push(action.payload);
+        Object.assign(state.books, action.payload);
       })
       .addCase(removeBook.fulfilled, (state, action) => {
-        state.books = state.books.filter((book) => book.item_id !== action.payload);
+        delete state.books[action.payload];
       });
   },
 });
