@@ -20,7 +20,7 @@ export const addBook = createAsyncThunk(
   async (book) => {
     const response = await axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/WPeNvXOKpKVIrtC9ZwKj/books', book);
     return response.data;
-  }
+  },
 );
 
 export const removeBook = createAsyncThunk(
@@ -28,7 +28,7 @@ export const removeBook = createAsyncThunk(
   async (bookId) => {
     await axios.delete(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/WPeNvXOKpKVIrtC9ZwKj/books/${bookId}`);
     return bookId;
-  }
+  },
 );
 
 export const BookSlice = createSlice({
@@ -59,7 +59,7 @@ export const BookSlice = createSlice({
         state.books.push(action.payload);
       })
       .addCase(removeBook.fulfilled, (state, action) => {
-        state.books = state.books.filter(book => book.id !== action.payload);
+        state.books = state.books.filter((book) => book.id !== action.payload);
       });
   },
 });
