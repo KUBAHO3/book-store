@@ -12,7 +12,8 @@ function BookList() {
 
   useEffect(() => {
     dispatch(fetchBooks());
-  }, []);
+  }, [dispatch]);
+
   const transformedData = Object.entries(booksArr).map(([item_id, items]) => {
     const [item] = items;
     return { item_id, ...item };

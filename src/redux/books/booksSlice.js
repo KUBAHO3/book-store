@@ -35,12 +35,7 @@ export const BookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    // addBook: (state, action) => {
-    //   state.books.push(action.payload);
-    // },
-    // removeBook: (state, action) => {
-    //   state.books = state.books.filter((book) => book.itemId !== action.payload);
-    // },
+
   },
   extraReducers: (builder) => {
     builder
@@ -63,7 +58,5 @@ export const BookSlice = createSlice({
       });
   },
 });
-
-// export const { addBook, removeBook } = BookSlice.actions;
 
 export default BookSlice.reducer;
