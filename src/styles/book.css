@@ -55,12 +55,12 @@
 
 button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .book-remove {
@@ -80,7 +80,7 @@ button {
   padding-top: 20px;
   height: 4.375rem;
   border-right: 1px solid #9f9f9f;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .book-progress-bar {
