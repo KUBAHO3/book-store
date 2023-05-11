@@ -9,7 +9,8 @@ function AddBook() {
   const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
 
-  const clickHandler = () => {
+  const clickHandler = (e) => {
+    e.preventDefault();
     const id = Math.floor(Math.random() * 1000000);
     dispatch(addBook({
       item_id: `itemId${id + 1}`,
@@ -17,6 +18,8 @@ function AddBook() {
       author,
       category: 'Action',
     }));
+    setTitle('');
+    setAuthor('');
   };
   return (
     <div className="form-wrapper">
